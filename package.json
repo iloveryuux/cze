@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "@ryuux/palette": "^1.0.0",
-    "@ryuux/prompt": "^1.1.0"
+    "@ryuux/prompt": "^2.2.0"
   }
 }

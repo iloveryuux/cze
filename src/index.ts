@@ -29,8 +29,8 @@ function getStagedChanges() {
 
 async function getCommitMessage() {
   const options = gitmoji.map(item => `${item.description} (${item.emoji})`)
-  const selectedIndex = await menu(options)
-  const selectedGitmoji = gitmoji[selectedIndex]
+  const { index } = await menu('??', options)
+  const selectedGitmoji = gitmoji[index]
   const prefix = `${selectedGitmoji.emoji} ${selectedGitmoji.code}:`
 
   const description = await input('Enter a description: ')
